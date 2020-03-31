@@ -1,0 +1,217 @@
+$(function(){
+	$("a.reply").click(function() {
+		var id = $(this).attr("id");
+		$("#parent_id").attr("value", id);
+		$("#name").focus();
+	});
+});
+function current(){
+		
+if ($(window).width() < 991) {
+	$('#mainNav').addClass('fixed-top yy');
+}else{
+	document.getElementById("menu-image").setAttribute("width", "0px");
+}
+
+					
+var Accordion = function(el, multiple) {
+	this.el = el || {};
+	this.multiple = multiple || false;
+	// Variables privadas
+	var links = this.el.find('.link');
+	// Evento
+	links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+}
+Accordion.prototype.dropdown = function(e) {
+	var $el = e.data.el;
+		$this = $(this),
+		$next = $this.next();
+	$next.slideToggle();
+	$this.parent().toggleClass('open');
+	if (!e.data.multiple) {
+		$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+	};
+}	
+var accordion = new Accordion($('#accordion'), false);
+	
+var url = window.location.href;
+	var t = $('.nav-link-text')
+	for(var i=0;i<t.length;i++)
+	{
+	 if(t[i].href==url)
+	  {
+		t[i].className = "nav-link-text active"
+	   t[i].parentElement.parentElement.style='display:block'
+	   t[i].parentElement.parentElement.parentElement.className='open'
+	  } 
+	}
+}
+function seturl(){
+		document.getElementById("page_id").setAttribute('value', document.URL);
+		document.getElementById("ppage_id").setAttribute('value', document.URL);
+	}
+function setFocusToTextBox(){
+	document.getElementById("name").focus();
+}
+function clicktoggle(){
+	document.getElementById("second").click();
+}
+function takemetop(){
+	window.scrollTo(0,0);
+}
+
+$(window).on("scroll", function () {
+	
+		if ($(this).scrollTop() < $('#accordion')[0].clientHeight) {
+		  $(".scroll .toc").hide()
+	   } else {
+		   $(".scroll .toc").show(1000)
+		   if($(".scroll .toc").length <1){
+			$(".scroll").append($('.toc').clone())
+		   }
+	   }
+	   
+	   if ($(this).scrollTop() < 700) {
+		  $(".ppp").hide()
+	   } else {
+		   $(".ppp").show(1000) 
+	   }
+});
+
+$(function(){
+	if ($(window).width() < 991) {
+	$('form#search').hide()
+}
+$('#search-image').click(function(){
+		$('form#search').toggle();
+	})
+})
+
+const endpoint = '../listOfTopics.json';
+	const cities = [];
+	const search = document.querySelector('.search');
+	const suggestions = document.querySelector('.suggestions');
+	//get your data first, and then hook it up.
+	// the blob (which is raw data) needs to be converted to readable data.
+	fetch(endpoint)
+		.then(blob => blob.json()
+			  .then(data => cities.push(...data))); // the "..." is whats known as spreading. This allows for you to push one array of data into another without nesting it.
+	
+	
+	function Display() {
+		const match = cities.filter(place => {
+			var word = this.value
+			// determine if place matches search
+			const regex = new RegExp(word, 'gi');
+			return place.title.match(regex) || place.technology.match(regex);
+		})
+		
+		if(this.value == ""){
+			suggestions.innerHTML = "";
+		}
+		else{ 
+		const html = match.map(place => {
+			const regex = new RegExp(this.value, 'gi');
+			const cityName = place.title.replace(regex, `<span class="hl"> ${this.value}</span>`);
+			const stateName = place.tooltip.replace(regex, `<span class="hl"> ${this.value}</span>`);
+			return `
+			<a target='_blank' href="${place.url}">
+				<li>
+					<span class="name" title="${place.tooltip}">${cityName}</span>
+					<span class="population">${place.technology}</span>
+				</li></a>
+			`;
+		}).join('');
+		
+		suggestions.innerHTML = html;
+		}
+	}
+	search.addEventListener('change', Display);
+	search.addEventListener('keyup', Display);
+	
+	
+var items = $('.col-lg-8 .card-header');
+items.filter(function() {
+	return items.index(this) % 2 ==0;
+}).css('background','#e67e22');
+var items1 = $('.col-lg-8 .card-header');
+items.filter(function() {
+	return items.index(this) % 3 ==0;
+}).css('background','#1abc9c');
+var items1 = $('.col-lg-8 .card-header');
+items.filter(function() {
+	return items.index(this) % 4 ==0;
+}).css('background','#9b59b6');
+var items1 = $('.col-lg-8 .card-header');
+items.filter(function() {
+	return items.index(this) % 5 ==0;
+}).css('background','#e74c3c');
+var items1 = $('.col-lg-8 .card-header');
+items.filter(function() {
+	return items.index(this) % 3 ==0;
+}).css('background','#e67e22');
+
+
+
+$('div#modalsubscribe').on('click','a',function(event){
+  event.preventDefault();
+  $('div#modalsubscribe').fadeOut('slow');
+  $('h1.subscribe,h2.subscribe,p').removeClass('blured_text');  
+});
+
+$(document).ready(function(){
+   $('form').find('.closesubscribe').on('click',function(){
+     $('.login').hide()
+	 setCookie("cookieSubscribe", "7days", 7)
+    });
+	
+	$('form').find('.btnsubscribe').on('click',function(){
+     $('.login').hide()
+	 setCookie("cookieSubscribe", "10000days", 10000)
+    });
+})
+
+// Exit intent
+function addEvent(obj, evt, fn) {
+    if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+    }
+    else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+    }
+}
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+	var cValue = ""
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) {
+			cValue = c.substring(nameEQ.length,c.length);
+		}
+    }
+	if(cValue){
+		console.log(cValue)	
+	}else{
+		
+		// Exit intent trigger
+		addEvent(document, 'mouseout', function(evt) {
+			if (evt.toElement == null && evt.relatedTarget == null ) {
+				$("form.login").removeAttr("hidden");
+			};
+		});
+	}
+}
+getCookie("cookieSubscribe")
+document.getElementById("subscriberpage").setAttribute('value', document.URL);
+document.getElementById("registerpage").setAttribute('value', document.URL);

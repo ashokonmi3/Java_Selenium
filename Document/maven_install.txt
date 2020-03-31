@@ -1,0 +1,70 @@
+Visit Maven official website, download the Maven zip file, for example : apache-maven-3.2.2-bin.zip. Unzip it to the folder you want to install Maven.
+
+https://www.mkyong.com/maven/how-to-install-maven-in-windows/
+
+
+Assume you unzip to this folder – C:\Program Files\Apache\maven
+Add both M2_HOME and MAVEN_HOME 
+variables in the Windows environment, 
+and point it to your Maven folder.
+ Add To PATH
+Update PATH variable, append Maven bin folder – %M2_HOME%\bin, so that you can run the Maven’s command everywhere.
+mvn -version
+
+Download mvn plugin for the eclipse
+create new project if maven is there it means it is available
+other wise go to 
+update eclipse or download from 
+help--> eclipse market place
+maven
+it will show the plugin
+=============
+maven life cycle
+maven is a build automation tool and its have 3 major life cycle
+1) Maven compile
+2) Maven test
+3)Maven resources or generate JAR files 
+
+
+Maven compile: Whatever class and code is available is compiled
+in single unit, this is happen by maven compiler plugin.
+Maven complier will be there to take care of this.
+
+Maven test: 
+Done by Test NG,  it can be unit or integration or any test case
+This happen using Mavesurefire plugin which is responsible for 
+testing.
+
+Maven resources plugin:
+JAR/WAR/EAR
+resources it can create.
+At the last of project these files are created.
+WAR web archieve resources
+Enterprise archieve resource
+
+
+ANT GRadle is also build automation tool
+
+setup maven project
+
+new project--> maven
+give group id artifiect id
+POM XML
+
+
+Guide to naming conventions on groupId, artifactId and version
+groupId will identify your project uniquely across all projects, so we need to enforce a naming schema. It has to follow the package name rules, what means that has to be at least as a domain name you control, and you can create as many subgroups as you want. Look at More information about package names.
+
+eg. org.apache.maven, org.apache.commons
+
+A good way to determine the granularity of the groupId is to use the project structure. That is, if the current project is a multiple module project, it should append a new identifier to the parent's groupId.
+
+eg. org.apache.maven, org.apache.maven.plugins,  org.apache.maven.reporting
+
+artifactId is the name of the jar without version. If you created it then you can choose whatever name you want with lowercase letters and no strange symbols. If it's a third party jar you have to take the name of the jar as it's distributed.
+
+eg. maven, commons-math
+
+version if you distribute it then you can choose any typical version with numbers and dots (1.0, 1.1, 1.0.1, ...). Don't use dates as they are usually associated with SNAPSHOT (nightly) builds. If it's a third party artifact, you have to use their version number whatever it is, and as strange as it can look.
+
+eg. 2.0, 2.0.1, 1.3.1

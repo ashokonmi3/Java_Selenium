@@ -1,0 +1,197 @@
+
+<!-- saved from url=(0052)http://demo.guru99.com/test/simple_context_menu.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="robots" content="nofollow, noindex">
+    
+    <title>Simple Context Menu</title>
+    
+<link href="./Simple Context Menu_files/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./Simple Context Menu_files/main.css" rel="stylesheet">
+    <link href="./Simple Context Menu_files/custom.css" rel="stylesheet">
+    <link href="./Simple Context Menu_files/slider-cars.css" rel="stylesheet">
+    <link href="./Simple Context Menu_files/home-bar.css" rel="stylesheet"> 
+   	 <link rel="stylesheet" type="text/css" href="./Simple Context Menu_files/bd.css">
+		
+<style>
+.btn-neutral {
+    background-color: #f3f6f6 !important;
+    color: #404040 !important;
+}
+.btn {
+    display: inline-block;
+    border-radius: 2px;
+    line-height: normal;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    font-size: 200%;
+    padding: 6px 12px 8px 12px;
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #27AE60;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
+    margin-left: 30px;
+}
+.dropdown-menu > li > a:hover{
+	text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5; 
+	}
+.context-menu-item{
+font-size: 16px;
+}
+button{
+  font-size: 14px;  
+  margin-left: 30px;
+}
+    </style>
+    <link href="./Simple Context Menu_files/jquery.contextMenu.css" rel="stylesheet" type="text/css">
+ 
+    <script type="text/javascript" async="" src="./Simple Context Menu_files/analytics.js.download"></script><script src="./Simple Context Menu_files/jquery.min.js.download"></script>
+    <script src="./Simple Context Menu_files/jquery.contextMenu.js.download" type="text/javascript"></script>
+
+<script>
+ $(function() {
+        $.contextMenu({
+            selector: '.context-menu-one', 
+            callback: function(key, options) {
+                var m = "clicked: " + key;
+                window.console && console.log(m) || alert(m); 
+            },
+            items: {
+                "edit": {name: "Edit", icon: "edit"},
+                "cut": {name: "Cut", icon: "cut"},
+               copy: {name: "Copy", icon: "copy"},
+                "paste": {name: "Paste", icon: "paste"},
+                "delete": {name: "Delete", icon: "delete"},
+                "sep1": "---------",
+                "quit": {name: "Quit", icon: function(){
+                    return 'context-menu-icon context-menu-icon-quit';
+                }}
+            }
+        });
+
+        $('.context-menu-one').on('click', function(e){
+            console.log('clicked', this);
+        })    
+    });
+</script>
+</head>
+<body id="authentication" class="authentication hide-left-column hide-right-column lang_en" style="font-family:&#39;Quicksand&#39;, sans-serif;"><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="0" width="0" id="_mN_cksync_0" style="display: none !important;" src="./Simple Context Menu_files/saved_resource.html"></iframe>
+	 <div class="container-fluid">
+        <!-- Top logo -->
+        <div class="row topper">
+            <div class="col-md-4 header-section">
+               
+                <div id="name-and-slogan" style="padding-top: 0px;padding-left: 0px;">
+                    <div id="site-name" class="site-name"><a href="http://demo.guru99.com/test/login.html" title="Home" rel="home" style="font-weight:700">Demo Site</a></div>
+                    
+                </div>
+            </div>
+            <div class="top-banner col-md-6">
+               <script id="mNCC" language="javascript">
+    medianet_width = "728";
+    medianet_height = "90";
+    medianet_crid = "224278574";
+    medianet_versionId = "3111299"; 
+  </script>
+<script src="./Simple Context Menu_files/nmedianet.js.download"></script><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="90" width="728" id="_mN_main_224278574_0_n" allowtransparency="true" src="./Simple Context Menu_files/saved_resource(1).html"></iframe>
+            </div>
+        </div>
+        <!-- End Top -->
+        <div class="row">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle -->
+                   
+
+                    <!-- Nav links for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="http://demo.guru99.com/test/simple_context_menu.html#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 14px;color:#FFF;font-weight:700">Selenium
+					  <b class="caret"></b></a>
+                                <ul class="dropdown-menu" style="font-size:14px;">
+                                    <li><a href="http://demo.guru99.com/test/flash-testing.html" style="text-decoration: none;">Flash Movie Demo</a></li>
+                                    <li><a href="http://demo.guru99.com/test/radio.html" style="text-decoration: none;">Radio &amp; Checkbox Demo</a></li> 
+                                    <li><a href="http://demo.guru99.com/test/table.html" style="text-decoration: none;">Table Demo</a></li> 
+                                    <li><a href="http://demo.guru99.com/test/link.html" style="text-decoration: none;">Accessing Link</a></li>
+                                    <li><a href="http://demo.guru99.com/test/ajax.html" style="text-decoration: none;">Ajax Demo</a></li>
+                                    <li><a href="http://demo.guru99.com/test/block.html" style="text-decoration: none;">Inside &amp; Outside Block Level Tag</a></li>
+                                    <li><a href="http://demo.guru99.com/test/delete_customer.php" style="text-decoration: none;">Delete Customer Form</a></li>
+                                    <li><a href="http://demo.guru99.com/test/yahoo.html" style="text-decoration: none;">Yahoo</a></li>
+                                     <li><a href="http://demo.guru99.com/test/tooltip.html" style="text-decoration: none;">Tooltip</a></li>
+                                    <li><a href="http://demo.guru99.com/test/upload/" style="text-decoration: none;">File Upload</a></li>
+                                    <li><a href="http://demo.guru99.com/test/login.html" style="text-decoration: none;">Login</a></li>
+                                    <li><a href="http://demo.guru99.com/test/social-icon.html" style="text-decoration: none;">Social Icon</a></li>
+                                    <li><a href="http://demo.guru99.com/test/autoit.html" style="text-decoration: none;">Selenium Auto IT</a></li>
+                                    <li><a href="http://demo.guru99.com/test/facebook.html" style="text-decoration: none;">Selenium IDE Test</a></li>
+                                    <li><a href="http://demo.guru99.com/test/guru99home/">Guru99 Demo Page</a></li>
+                                    <li><a href="http://demo.guru99.com/test/guru99home/scrolling.html">Scrollbar Demo</a></li>
+                                    <li><a href="http://demo.guru99.com/test/image_upload/">File Upload using Sikuli Demo</a></li>
+                                    <li><a href="http://demo.guru99.com/test/cookie/selenium_aut.php">Cookie Handling Demo</a></li>
+                                    <li><a href="http://demo.guru99.com/test/drag_drop.html">Drag and Drop Action</a></li>
+                                    <li><a href="http://demo.guru99.com/test/">Selenium DatePicker Demo</a></li>
+                                </ul>
+                            </li>
+                             <li class="dropdown">
+                                <a href="http://demo.guru99.com/insurance/v1/index.php" style="font-size: 14px;color:#FFF;font-weight:700">Insurance Project</a>
+                                
+                            </li>
+                           <li class="dropdown">
+                                <a href="http://demo.guru99.com/Agile_Project/Agi_V1/" style="font-size: 14px;color:#FFF;font-weight:700">Agile Project</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="http://demo.guru99.com/V1/index.php" style="font-size: 14px;color:#FFF;font-weight:700">Bank Project</a>
+                                
+                            </li>
+                            <li class="dropdown">
+                               <a href="http://demo.guru99.com/Security/SEC_V1/index.php" style="font-size: 14px;color:#FFF;font-weight:700">Security Project</a>
+                            </li>
+                            <li class="dropdown"><a href="http://demo.guru99.com/telecom/index.html" style="font-size: 14px;color:#FFF;font-weight:700">Telecom Project</a></li>
+                            
+                            <li class="dropdown"><a href="http://demo.guru99.com/payment-gateway/index.php" style="font-size: 14px;color:#FFF;font-weight:700">Payment Gateway Project</a></li>
+                            
+                            <li class="dropdown"><a href="http://demo.guru99.com/test/newtours/" style="font-size: 14px;color:#FFF;font-weight:700">New Tours</a></li>
+                            
+                        </ul>
+                        
+                        
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+         </div>
+    <!-- ##### End Nav Bar ##### -->   
+    <!-- ##### End Nav Bar ##### -->
+<span class="context-menu-one btn btn-neutral">right click me</span>
+
+<br><br><br><br>
+<button ondblclick="myFunction()">Double-Click Me To See Alert</button>
+
+<script>
+function myFunction() {
+alert("You double clicked me.. Thank You..");    
+}
+</script>
+    
+    <script src="./Simple Context Menu_files/bootstrap.min.js.download"></script>
+    <script src="./Simple Context Menu_files/treemenu.js.download"></script>
+    <script src="./Simple Context Menu_files/slider-cars.js.download"></script>
+    <script src="./Simple Context Menu_files/home-bar.js.download"></script>   
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./Simple Context Menu_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1248015-24');
+</script>    
+    <ul class="context-menu-list context-menu-root" style="width: 139px; top: 196px; left: 144px; z-index: 1; display: none;"><li class="context-menu-item context-menu-icon context-menu-icon-edit"><span>Edit</span></li><li class="context-menu-item context-menu-icon context-menu-icon-cut"><span>Cut</span></li><li class="context-menu-item context-menu-icon context-menu-icon-copy"><span>Copy</span></li><li class="context-menu-item context-menu-icon context-menu-icon-paste"><span>Paste</span></li><li class="context-menu-item context-menu-icon context-menu-icon-delete"><span>Delete</span></li><li class="context-menu-item context-menu-separator context-menu-not-selectable"></li><li class="context-menu-item context-menu-icon context-menu-icon-quit"><span>Quit</span></li></ul></body></html>

@@ -1,0 +1,2 @@
+Download the driver gecko for firefox, chrome for google chrome and put in the enviornment path
+download the java selenium latest version and add as external jars in ur project as per other document

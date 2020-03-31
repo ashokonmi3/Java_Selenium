@@ -1,0 +1,212 @@
+/* Style Sheet for Brown and Donaldson */
+A
+{
+    BACKGROUND-COLOR: transparent;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    BORDER-BOTTOM: medium none;
+    MARGIN: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px;
+    PADDING-BOTTOM: 0px;
+}
+BODY
+{
+   	COLOR: black;
+   	FONT-FAMILY: verdana, arial, sans-serif;
+   	FONT-SIZE: 8pt;
+   	MARGIN-LEFT: 0px;
+   	MARGIN-RIGHT: 0px;
+	MARGIN-TOP: 0px;
+	MARGIN-BOTTOM: 0px;
+}
+H1
+{
+    COLOR: midnightblue;
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: large;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 12pt;
+}
+H2
+{
+    COLOR: #cc9933;
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: medium;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 13pt;
+}
+H3
+{
+    COLOR: #cc9933;
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: medium;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 12pt;
+}
+H4, H5, H6, H7
+{
+ 	COLOR: black;
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: small;
+    FONT-WEIGHT: normal;
+	LINE-HEIGHT: 10pt;
+}
+INPUT
+{
+ 	COLOR: black;
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: normal;
+}
+PRE
+{
+    COLOR: green;
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: medium;
+    FONT-WEIGHT: normal;
+    PAGE-BREAK-AFTER: always;
+    PAGE-BREAK-BEFORE: always;
+    TEXT-ALIGN: left;
+}
+SPAN.BulletNumber
+{
+    COLOR: #cc9933;
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: medium;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 14pt;
+}
+TABLE
+{
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: normal;
+}
+TD.StockHeading
+{
+    BACKGROUND-COLOR: white;
+    COLOR: black;
+    FONT-FAMILY: tahoma, verdana, arial, sans-serif;
+    FONT-SIZE: xx-small;
+    FONT-WEIGHT: bold;
+    PADDING-LEFT: 3pt;
+    PADDING-RIGHT: 0pt;
+}
+TD.StockItem
+{
+    BORDER-RIGHT: silver thin solid;
+    FONT-FAMILY: tahoma, verdana, arial, sans-serif;
+    FONT-SIZE: xx-small;
+    FONT-WEIGHT: normal;
+	 HEIGHT: 14pt;
+    PADDING-LEFT: 3pt;
+    PADDING-RIGHT: 0pt;
+}
+TD.StockSpace
+{
+    BACKGROUND-COLOR: #999999;
+    FONT-FAMILY: tahoma, verdana, arial, sans-serif;
+    FONT-SIZE: x-small;
+    FONT-WEIGHT: normal;
+}
+TD.StockItemNoBorder
+{
+    FONT-FAMILY: tahoma, verdana, arial, sans-serif;
+    FONT-SIZE: xx-small;
+    FONT-WEIGHT: normal;
+    HEIGHT: 14pt;
+    PADDING-LEFT: 3pt;
+    PADDING-RIGHT: 0pt;
+}
+TD.navmenu
+{
+    COLOR: chocolate;
+    FONT-FAMILY: tahoma, verdana, arial, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bolder;
+}
+TD.title
+{
+    COLOR: darkgray;
+    FONT-FAMILY: tahoma, verdana, arial, sans-serif;
+    FONT-SIZE: 14pt;
+    FONT-WEIGHT: bolder;
+}
+TD.menuitem, TD.menuitemover
+{
+    COLOR: white;
+    FONT-FAMILY: tahoma, verdana, arial, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bolder;
+    PADDING-LEFT: 3pt;
+    PADDING-RIGHT: 0pt;
+}
+TD.menuheading
+{
+    COLOR: white;
+    FONT-FAMILY: tahoma, verdana, arial, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bolder;
+}
+TD.menuheading2
+{
+    COLOR: white;
+    FONT-FAMILY: tahoma, verdana, arial, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bolder;
+    PADDING-TOP: 3pt;
+}
+TD.columnHeader
+{
+    BACKGROUND-COLOR: gray;
+    COLOR: white;
+    FONT-FAMILY: tahoma, verdana, arial, sans-serif;
+    FONT-SIZE: medium;
+    FONT-WEIGHT: normal;
+}
+.abort, .error
+{
+    COLOR: red;
+    FONT-FAMILY: tahoma, verdana, arial, sans-serif;
+    FONT-SIZE: medium;
+    FONT-WEIGHT: normal;
+}
+.button
+{
+    COLOR: #006666;
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+}
+.info
+{
+    COLOR: green;
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: medium;
+    FONT-WEIGHT: normal;
+}
+.s
+{
+	 FONT-FAMILY: verdana, arial, sans-serif;
+     FONT-SIZE: 8pt;
+     FONT-WEIGHT: normal;
+}
+.section
+{
+    COLOR: midnightblue;
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: medium;
+    FONT-WEIGHT: bold;
+    MARGIN-BOTTOM: 3pt;
+    MARGIN-TOP: 3pt;
+}
+.smalltext
+{
+    COLOR: gray;
+    FONT-FAMILY: verdana, arial, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: normal;
+}

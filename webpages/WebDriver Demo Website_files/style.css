@@ -1,0 +1,12 @@
+#sortable {
+	list-style-type: none;
+	width: 50%;
+}
+
+#sortable li {
+	margin: 5px;
+	padding: 5px;
+	border: 2px solid #A1887A;
+	border-radius: 10px;
+	cursor: all-scroll;
+}
